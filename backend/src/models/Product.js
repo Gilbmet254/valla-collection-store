@@ -12,7 +12,7 @@ const productSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ['male', 'female', 'children'],
+    enum: ['male', 'female', 'children', 'shoes', 'sandals', 'designer'],
     required: true
   },
   price: {
@@ -22,7 +22,7 @@ const productSchema = new mongoose.Schema({
   },
   sizes: [{
     type: String,
-    enum: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    enum: ['XS', 'S', 'M', 'L', 'XL', 'XXL', '28', '30', '32', '34', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', 'One Size']
   }],
   colors: [String],
   images: [String],
